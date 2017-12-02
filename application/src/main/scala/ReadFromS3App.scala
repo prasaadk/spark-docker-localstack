@@ -12,7 +12,7 @@ object ReadFromS3App {
                               .appName("SparkApp")
                               .getOrCreate();
 
-    val df = session.read.textFile("s3a://bucket-list/").toDF()
+    val df = session.read.textFile("s3a://bucket-list/data.csv").toDF()
 
     df.foreach(row => {println (row)})
   }
