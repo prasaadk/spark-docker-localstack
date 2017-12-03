@@ -1,3 +1,5 @@
+import sbt.Keys.fork
+
 lazy val commonSettings = Seq (
   organization := "demo.sparkapp",
   version := "1.0",
