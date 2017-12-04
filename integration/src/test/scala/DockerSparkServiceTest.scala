@@ -7,7 +7,7 @@ import org.scalatest.time.{Second, Seconds, Span}
 /**
   * Created by prasaadk on 02/12/2017.
   */
-class IntegrationWithDockerKitTest extends FlatSpec
+class SparkContainerTest extends FlatSpec
   with Matchers
   with DockerTestKit
   with DockerKitSpotify
