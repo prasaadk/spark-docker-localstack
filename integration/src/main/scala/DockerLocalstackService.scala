@@ -8,7 +8,6 @@ trait DockerLocalstackService extends DockerKit {
   val S3Port = 4572
 
   val localstackContainer = DockerContainer("localstack/localstack")
-    .withHostname("")
     .withPorts(S3Port -> Some(S3Port))
     .withReadyChecker(DockerReadyChecker.Always)
 
